@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <h1 class="text-center text-5xl mt-6">Let's some <span class="text-blue-400">mooney</span>!!!</h1>
+      <section class="mt-7">
+          <div class="grid grid-cols-3 gap-4 w-3/4 m-auto">
+              <div class="bg-red-400 p-8 text-center">
+                   <h2 class="text-3xl">Deposite</h2>
+                   <h2 class="text-2xl">$<span id="current-value">00</span></h2>
+                  </div>
+              <div class="bg-blue-400 p-8 text-center">
+                   <h2 class="text-3xl">Withdraw</h2>
+                   <h2 class="text-2xl">$ <span id="withdraw-total">00</span></h2>
+                  </div>
+              <div class="bg-purple-400 p-8 text-center">
+                   <h2 class="text-3xl">Total Balance</h2>
+                   <h2 class="text-2xl">$ <span id="total-balance">1200</span> </h2>
+              </div>
+          </div>
+  
+      </section>
+  
+  <section class="mt-7">
+      <div class="grid grid-cols-2 gap-4 w-3/4 m-auto">
+
+          <div class="bg-red-100 p-8">
+              <h3 class="text-3xl py-2 ">Please Deposite</h3>
+              <!-- user input -->
+              <input type="text" class="border border-gray-400 rounded p-2 block" placeholder="$ Enter input you want to" id="deposite-input">
+              <!-- button -->
+              <button onclick="deposite()" class="bg-amber-400 px-4 py-2 my-3 rounded text-white">Deposite</button>
+          </div>
+
+
+          <div class="bg-gray-200 p-8">
+              <h3 class="text-3xl py-2">Please Withdraw</h3>
+              <input type="text" class="border border-gray-400 rounded p-2 block" placeholder="$ Enter input you want to" id="withdraw-input">
+              <button class="bg-amber-400 px-4 py-2 my-3 rounded text-white" onclick="withdraw()">Withdraw</button>
+          </div>
+  
+      </div>
+  
+  
+  </section>
+    <!-- js link -->
+  <script src="js/script.js"></script>
+  </body>
+  </html>
